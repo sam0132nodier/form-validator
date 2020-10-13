@@ -1,5 +1,8 @@
 ## form-validator
 
+![Project screenshot](./img/demo.JPG)
+
+
 This is a client-side form validator build with vanilla JavaScript. It checks the required entries, the specific __length__ of entries, email and password match using regular expressions.
 
 ## Projects specifications
