@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap');
+
+:root {
+	--success: #28a745;
+	--error: #dc3545;
+	--warning: #ffc107;
+	--primary: #007bff;
+	--light: #f8f9fa;
+	--secondary: #e8e8e8;
+	--dark: #343a40;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--light);
+	min-height: 100vh;
+	font-family: Roboto, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 400px;
+	background: #FFFFFF;
+	box-shadow: 0 3px 10px rgba(0,0,0, .5);
+	border-radius: 10px;
+}
+
+h2 {
+	font-family: Montserrat, sans-serif;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.form {
+	padding: 20px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    padding-bottom: 10px;
+    color: #888;
+}
+
+.form-control input {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 12px;
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.form-control input:focus {
+    outline: none;
+    border: 2px solid #b2b2b2;
+}
+
+.form-control.success input {
+	border-color: var(--success);
+}
+
+.form-control.error input {
+	border-color: var(--error);
+}
+
+.form-control small {
+    color: var(--error);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.form button {
+    width: 100%;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: var(--primary);
+    font-size: 17px;
+    color: white;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 13px 0;
+}
